@@ -61,7 +61,7 @@ export function FinalCTA() {
         >
           Season 1 begins{' '}
           <span className="text-[#D4AF37] font-bold relative inline-block">
-            March 19
+            March 23
             <motion.span
               className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#D4AF37]"
               initial={{ scaleX: 0 }}

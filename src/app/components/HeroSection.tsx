@@ -143,7 +143,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <span className="inline-block w-2 h-2 bg-[#2ECC71] rounded-full animate-pulse"></span>
-          Season 1 begins March 19 • 7 Day Trial
+          Season 1 begins March 23 • 7 Day Trial
         </motion.p>
       </motion.div>
     </section>

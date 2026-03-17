@@ -23,7 +23,7 @@ export function MasterFooter() {
               The competitive learning arena for designers and builders.
             </p>
             <p className="text-[#D4AF37] text-sm font-bold">
-              Season 1 begins March 19, 2026
+              Season 1 begins March 23, 2026
             </p>
           </div>
 
