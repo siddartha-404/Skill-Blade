@@ -59,12 +59,18 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Optimized responsive text: text-4xl on mobile, scales up to 8xl on desktop */}
+          {/* Optimized responsive text keeping your specific logic */}
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[1.1]">
             Stop Watching Tutorials.<br className="hidden md:block" /> 
             <span className="text-[#2ECC71] relative inline-block mt-2 md:mt-0">
               Start Forging Skills.
-              {/* ... underline motion span ... */}
+              {/* Green underline restored with motion */}
+              <motion.span
+                className="absolute -bottom-2 left-0 right-0 h-1 bg-[#2ECC71]"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+              ></motion.span>
             </span>
           </h1>
         </motion.div>
