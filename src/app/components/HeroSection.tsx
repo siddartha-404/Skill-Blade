@@ -13,7 +13,7 @@ export function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 py-24 overflow-hidden">
+    <section ref={ref} className="relative min-h-screen flex items-center justify-center px-4 py-16 md:py-24 overflow-hidden">
       {/* Animated noise texture overlay */}
       <motion.div 
         className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]"
@@ -59,22 +59,18 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            Stop Watching Tutorials.<br />
-            <span className="text-[#2ECC71] relative inline-block">
+          {/* Optimized responsive text: text-4xl on mobile, scales up to 8xl on desktop */}
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-[1.1]">
+            Stop Watching Tutorials.<br className="hidden md:block" /> 
+            <span className="text-[#2ECC71] relative inline-block mt-2 md:mt-0">
               Start Forging Skills.
-              <motion.span
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-[#2ECC71]"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-              ></motion.span>
+              {/* ... underline motion span ... */}
             </span>
           </h1>
         </motion.div>
 
         <motion.p
-          className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed text-center"
+          className="text-lg md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -83,7 +79,7 @@ export function HeroSection() {
         </motion.p>
 
         <motion.p
-          className="text-lg md:text-xl text-[#D4AF37] mb-12 font-bold uppercase tracking-wider"
+          className="text-md md:text-xl text-[#D4AF37] mb-12 font-bold uppercase tracking-wider"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -92,7 +88,7 @@ export function HeroSection() {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+          className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
