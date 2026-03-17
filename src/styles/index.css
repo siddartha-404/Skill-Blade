@@ -1,0 +1,29 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2ECC71 #0F0F0F;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2ECC71 0%, #D4AF37 100%);
+  border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #27ae60 0%, #c9a332 100%);
+}
