@@ -12,7 +12,7 @@ const steps = [
   },
   {
     icon: Swords,
-    title: 'Arena',
+    title: 'League',
     subtitle: 'Weekly Battles',
     description: 'Weekly battles and design duels. Compete with other builders.',
     features: ['Speed Duels', 'Tournaments', 'Live Leaderboard'],
@@ -65,7 +65,7 @@ export function SolutionFlow() {
         >
           <Zap className="w-6 h-6 text-[#D4AF37]" fill="#D4AF37" />
           <p className="text-xl md:text-2xl text-[#D4AF37] font-bold uppercase tracking-widest">
-            Forge → Arena → Society
+            Forge → League → Society
           </p>
           <Zap className="w-6 h-6 text-[#D4AF37]" fill="#D4AF37" />
         </motion.div>
